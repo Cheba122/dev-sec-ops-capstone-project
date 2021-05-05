@@ -1,7 +1,10 @@
 language: python
 python:
   - "3.8"
-script:
+
+before_install:
+ get checkout master
+ script:
   -"python -- version"
 
 
